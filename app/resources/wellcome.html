@@ -1,0 +1,67 @@
+<!--[main]-->
+<html>
+    <head>
+        <title>Slide Simples com jQuery</title>
+        <meta charset="UTF-8">
+        <style type="text/css">
+           #slider{
+                list-style:none;
+                width:600px;
+                height:300px;
+                margin:0 auto;
+                padding:0;
+                overflow: hidden;
+                position: relative;
+            }
+            #slider li{
+             
+               z-index: 0;
+               display:none;
+            }
+            #slider li.sliderActive{
+                z-index: 1;
+            }
+        </style>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script type="text/javascript">
+            function simpleSlider(){
+                    var sliderActive = $("#slider .sliderActive");
+                    var sliderNext   = sliderActive.next().length ? sliderActive.next() : $("#slider li:first");
+                    sliderNext.addClass('sliderActive').fadeIn();
+                    sliderActive.removeClass('sliderActive').fadeOut();
+                }
+            $(function(){
+                $("#slider li:first").fadeIn();
+                setInterval( "simpleSlider()", 3000 );
+            });
+            
+            $(".vagas").click(function() {
+              <!--window.location.href = "index.php?class=VagasDetalhesView&method=onLoad&key=" + $(this).children().val();-->
+              window.location.href = "index.php?class=VagaDetalhes&key=" + $(this).children().val();
+            });
+            
+            $(function(){
+              $("#div1").mouseenter(function(){
+        alert("O cursor foi posicionado sobre a div.")
+    });
+});
+
+        </script>
+    </head>
+    <body>
+        <ul id="slider">
+            <li class="sliderActive">
+               <img src="app/templates/theme1/images/logoPreta.png" alt="">
+            </li>
+            <!--[vagas]-->
+                
+                <li class="vagas">
+                   <input type="hidden" class="hid" value="{$id}" name="hid">
+                   {$vagas}
+                </li>
+            <!--[/vagas]-->
+        </ul>
+    </body>
+    
+</html>
+<!--[/main]-->

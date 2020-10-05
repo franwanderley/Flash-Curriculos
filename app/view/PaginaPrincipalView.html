@@ -1,0 +1,142 @@
+<!--PaginaPrincipalView SLIDE DE VAGAS-->
+<html>
+   <head>
+       <script>  
+            
+             //https://github.com/Wlada/vue-carousel-3d
+        new Vue({
+          el: '#carousel',
+          data: {
+            slides: 7
+          },
+          components: {
+            'carousel-3d': Carousel3d.Carousel3d,
+            'slide': Carousel3d.Slide
+          }
+        });
+        
+
+    /* Light YouTube Embeds by @labnol */
+    /* Web: http://labnol.org/?p=27941 */
+
+    document.addEventListener("DOMContentLoaded",
+        function() {
+            var div, n,
+                v = document.getElementsByClassName("youtube-player");
+            for (n = 0; n < v.length; n++) {
+                div = document.createElement("div");
+                div.setAttribute("data-id", v[n].dataset.id);
+                div.innerHTML = labnolThumb(v[n].dataset.id);
+                div.onclick = labnolIframe;
+                v[n].appendChild(div);
+            }
+        });
+
+    function labnolThumb(id) {
+        var thumb = '<img src="https://i.ytimg.com/vi/ID/hqdefault.jpg">',
+            play = '<div class="play"></div>';
+        return thumb.replace("ID", id) + play;
+    }
+
+    function labnolIframe() {
+        var iframe = document.createElement("iframe");
+        var embed = "https://www.youtube.com/embed/ID?autoplay=1";
+        iframe.setAttribute("src", embed.replace("ID", this.dataset.id));
+        iframe.setAttribute("frameborder", "1");
+        iframe.setAttribute("allowfullscreen", "1");
+        this.parentNode.replaceChild(iframe, this);
+    }
+
+        
+                    
+       </script>
+       
+       <style>
+            body
+{background: #fff;
+} 
+.carousel-3d-slide {
+      height: auto !important;
+      background-color: rgba(0, 0, 0, 0.25) !important;
+  border:none;
+  padding:0;
+  margin:0;
+    }
+
+
+
+.youtube-player {
+        position: relative;
+        padding-bottom: 56.23%;
+        /* Use 75% for 4:3 videos */
+        height: 0;
+        overflow: hidden;
+        max-width: 100%;
+        background: #000;
+        margin: 0;
+    }
+    
+    .youtube-player iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 100;
+        background: transparent;
+    }
+    
+    .youtube-player img {
+        bottom: 0;
+        display: block;
+        left: 0;
+        margin: auto;
+        max-width: 100%;
+        width: 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        border: none;
+        height: auto;
+        cursor: pointer;
+        -webkit-transition: .4s all;
+        -moz-transition: .4s all;
+        transition: .4s all;
+    }
+    
+    .youtube-player img:hover {
+        -webkit-filter: brightness(75%);
+    }
+    
+    .youtube-player .play {
+        height: 72px;
+        width: 72px;
+        left: 50%;
+        top: 50%;
+        margin-left: -36px;
+        margin-top: -36px;
+        position: absolute;
+        background: url("//i.imgur.com/TxzC70f.png") no-repeat;
+        cursor: pointer;
+    }
+           
+         </style>
+   </head>
+
+   <body> 
+                   
+            <div id="carousel">
+              <carousel-3d :autoplay="true" :autoplay-timeout="2400" :key="i" reverse-transition="none" transition="none" id="sliding">
+            <slide :index="0"><div class="youtube-player" data-id="MF8GlLgQH7E"></div></slide>
+                <slide :index="1"><div class="youtube-player" data-id="CETTzv3fTG0"></div></slide>
+                <slide :index="2"><div class="youtube-player" data-id="PImo7KCwInQ"></div></slide>
+                <slide :index="3"><div class="youtube-player" data-id="UQN2R-9y6z0"></div></slide>
+                <slide :index="4"><div class="youtube-player" data-id="ILmMhNN0hZc"></div></slide>
+                <slide :index="5"><div class="youtube-player" data-id="KIJGlTu5sEI"></div></slide>
+            
+              </carousel-3d>
+   </div>      
+             
+   </body>
+   
+</html>

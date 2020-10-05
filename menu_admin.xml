@@ -1,0 +1,22 @@
+<menu>
+    <menuitem label='Página Principal'>
+        <action>PaginaPrincipalForm</action>
+    </menuitem>
+    
+    <menuitem label='Vagas'>
+        <action>VagasFormAdmin</action>
+    </menuitem>
+    
+    <menuitem label='Currículo'>
+        <action>CurriculosViewAdmin</action>
+    </menuitem>
+    
+    <menuitem label='Funcionario'>
+        <action>ListagemFuncionario</action>
+    </menuitem>
+    
+    <menuitem label='Sobre'>
+        <action>SobreForm</action>
+    </menuitem>
+    
+</menu>

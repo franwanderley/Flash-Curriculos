@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <tframe id="0">
+        <class>TFrame</class>
+        <name>frame1</name>
+        <title></title>
+        <x>100</x>
+        <y>150</y>
+        <width>324</width>
+        <height>140</height>
+        <child>
+            <tpanel/>
+        </child>
+    </tframe>
+    <tbutton id="1">
+        <class>TButton</class>
+        <name>button1</name>
+        <x>430</x>
+        <y>205</y>
+        <value>Salvar</value>
+        <icon>ico_save.png</icon>
+        <action></action>
+        <template></template>
+    </tbutton>
+    <tbutton id="2">
+        <class>TButton</class>
+        <name>button2</name>
+        <x>25</x>
+        <y>205</y>
+        <value>Salvar</value>
+        <icon>ico_save.png</icon>
+        <action></action>
+        <template></template>
+    </tbutton>
+</form>

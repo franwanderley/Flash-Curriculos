@@ -1,0 +1,14 @@
+<menu>
+    <menuitem label='Página Principal'>
+        <action>PaginaPrincipalForm</action>
+    </menuitem>
+    
+    <menuitem label='Vagas'>
+        <action>VagasForm</action>
+    </menuitem>
+    
+    <menuitem label='Sobre'>
+        <action>SobreForm</action>
+    </menuitem>
+    
+</menu>
