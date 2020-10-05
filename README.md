@@ -1,6 +1,6 @@
 
- <h1>Ecoleta NLW -- RocketSeat</h1>
- <p>Sistema para encontrar pontos de coleta de lixo perto de voçe e jogar-lo corretamente</p>
+ <h1>FFlash Curriculos</h1>
+ <p>Sistema para encontrar empregos e encontrar profissionais</p>
  <img src="https://github.com/franwanderley/Flash-Curriculos/blob/master/app/images/flashcurriculos.png" alt="Prints do Ecoleta">
 
  <h3>
