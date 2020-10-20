@@ -1,6 +1,6 @@
 
- <h1>FFlash Curriculos</h1>
- <p>Sistema para encontrar empregos e encontrar profissionais</p>
+ <h1>Flash Curriculos</h1>
+ <p>Sistema para encontrar empregos e profissionais</p>
  <img src="https://github.com/franwanderley/Flash-Curriculos/blob/master/app/images/flashcurriculos.png" alt="Prints do Ecoleta">
 
  <h3>
@@ -20,6 +20,7 @@
 <ul>
     <li>Dá um git clone nestre repositorio e coloque na pasta desejada</li>
     <li>Importe database/ultimato2.sql para seu banco de dados</li>
+    <li> Configure o app/config/sample.ini segundo o seu banco de dados
     <li>rode no servidor</li>
     <li>localhost/'seu diretorio'</li>
 </ul>
