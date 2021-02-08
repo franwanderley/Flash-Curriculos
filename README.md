@@ -16,9 +16,9 @@
  </ul>
 
  <h3>Usar no seu PC</h3>
-<h4>WEb</h4>
+<h4>WEB</h4>
 <ul>
-    <li>Dá um git clone nestre repositorio e coloque na pasta desejada</li>
+    <li>Dá um git clone neste repositorio e coloque na pasta desejada</li>
     <li>Importe database/ultimato2.sql para seu banco de dados</li>
     <li> Configure o app/config/sample.ini segundo o seu banco de dados
     <li>rode no servidor</li>
