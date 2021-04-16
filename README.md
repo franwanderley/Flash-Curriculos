@@ -21,7 +21,7 @@
     <li>Dá um git clone neste repositorio e coloque na pasta desejada</li>
     <li>Importe database/ultimato2.sql para seu banco de dados</li>
     <li> Configure o app/config/sample.ini segundo o seu banco de dados
-    <li>rode no servidor</li>
+    <li>rode no seu servidor</li>
     <li>localhost/'seu diretorio'</li>
 </ul>
 
