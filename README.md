@@ -15,7 +15,7 @@
      <li/>MySql</li>
  </ul>
 
- <h3>Usar no seu PC</h3>
+ <h3>💻 Usar no seu PC</h3>
 <h4>WEB</h4>
 <ul>
     <li>Dá um git clone neste repositorio e coloque na pasta desejada</li>
